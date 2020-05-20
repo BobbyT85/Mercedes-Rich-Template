@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>320x480</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <div id="preloadShape">
+        <div class="circle"></div>
+    </div>
+
+    <div id="mainContainer" class="asset full">
+        <div id="border" class="asset full">
+            <ft-video name="video" id="video"></ft-video>
+
+            <ft-default clicktag>
+                <div id="contentContainer" class="asset">
+                    <div id="background" class="asset">
+                        <ft-dynamic name="dynamicBackground"></ft-dynamic>
+                    </div>
+
+                    <div id="text1" class="asset copy">
+                        <ft-dynamic name="dynamicText1"></ft-dynamic>
+                    </div>
+
+                    <div id="text2" class="asset copy hidden">
+                        <ft-dynamic name="dynamicText2"></ft-dynamic>
+                    </div>
+
+                    <div id="text3" class="asset copy hidden">
+                        <ft-dynamic name="dynamicText3"></ft-dynamic>
+                    </div>
+
+                    <div id="text4" class="asset copy hidden">
+                        <ft-dynamic name="dynamicText4"></ft-dynamic>
+                    </div>
+
+                    <div id="ctaButton" class="asset hidden">
+                        <div id="ctaArrow" class="arrowRight">
+                            <div class="inside"></div>
+                        </div>
+                        <ft-dynamic name="dynamicCtaText"></ft-dynamic>
+                    </div>
+
+                    <div id="logo" class="asset">
+                        <ft-dynamic name="dynamicLogo" class="asset"></ft-dynamic>
+                    </div>
+
+                    <div id="termsText" class="asset pink hidden">
+                        <ft-dynamic name="dynamicTermsText"></ft-dynamic>
+                    </div>
+                </div>
+            </ft-default>
+
+            <div id="soundOffButton" class="asset icon"></div>
+            <div id="soundOnButton" class="asset icon"></div>
+            <div id="playButton" class="asset icon"></div>
+            <div id="pauseButton" class="asset icon"></div>
+            <div id="replayButton" class="asset icon"></div>
+            <div id="bigPlayButton" class="asset icon"></div>
+
+            <div id="closeButton" class="asset">
+                <div id="closeText">
+                    <ft-dynamic name="dynamicCloseText" class="closeText"></ft-dynamic>
+                </div>
+                <div id="closeIcon">
+                    <ft-dynamic name="dynamicCloseIcon" class="closeIcon"></ft-dynamic>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script src="https://cdn.flashtalking.com/frameworks/js/api/2/10/html5API.js" type="text/javascript"></script>
+	<script src="https://cdn.flashtalking.com/frameworks/js/gsap/latest/TweenMax.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="scripts/ready.min.js"></script>
+    <script type="text/javascript" src="scripts/vars.min.js"></script>
+    <script type="text/javascript" src="scripts/politeLoad.min.js"></script>
+    <script type="text/javascript" src="scripts/logic.js"></script></body>
+</html>

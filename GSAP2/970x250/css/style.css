@@ -1,0 +1,282 @@
+html, body {
+	box-sizing: border-box;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "daimlercac_regular";
+    src:  url("../fonts/daimlercac_regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "daimlercs_regular";
+    src:  url("../fonts/daimlercs_regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+.asset {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+.full {
+	width: 100%;
+	height: 100%;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+#preloadShape {
+	position: absolute;
+	width: 970px;
+	height: 250px;
+	left: 0px;
+	top: 0px;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 700;
+	background-color: #000000;
+	pointer-events: none;
+}
+
+#preloadShape .circle {
+	border: 3px solid #01acee;
+	border-bottom-color: #ffffff;
+	border-radius: 50%;
+	height: 20px;
+	left: 50%;
+	margin-left: -12.5px;
+	margin-top: -12.5px;
+	position: absolute;
+	top: 50%;
+	transition: all 0.7s ease-in-out;
+	animation: spin 0.5s linear infinite;
+	width: 20px;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#mainContainer {
+	width: 970px;
+	height: 250px;
+	left: 0;
+	top: 0;
+	background: #000000;
+	overflow: hidden;
+}
+
+.copy {
+    left: 566px;
+    right: 27px;
+    top: 26px;
+
+	width: 404px;
+	height: 224px;
+	
+    font-size: 31px;
+    line-height: 1;
+    letter-spacing: -0.3px;
+}
+
+ft-dynamic[name="dynamicText1"],
+ft-dynamic[name="dynamicText2"],
+ft-dynamic[name="dynamicText3"],
+ft-dynamic[name="dynamicText4"],
+ft-dynamic[name="dynamicText5"] {
+    font-family: "daimlercac_regular", Arial, serif;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+ft-dynamic[name="dynamicCtaText"] {
+    font-family: "daimlercs_regular", sans-serif;
+    color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	display: inline-block;
+    font-size: 14px;
+    line-height: 1.1;
+    margin: 0 6px 0 6px;
+}
+
+#termsText {
+    left: 26px;
+    right: 15px;
+    top: 192px;
+
+	width: 944px;
+	height: 58px;
+	
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0px;
+}
+
+ft-dynamic[name="dynamicTermsText"] {
+    font-family: "daimlercs_regular", sans-serif;
+    color: #ff00a8;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+ft-dynamic[name="dynamicLogoA"],
+ft-dynamic[name="dynamicLogoB"],
+ft-dynamic[name="dynamicBackground"] {
+	position: absolute;
+	-ms-transform-origin: left top;
+	-webkit-transform-origin: left top;
+	-moz-transform-origin: left top;
+	-o-transform-origin: left top;
+	transform-origin: left top;
+	-ms-transform: scale (0.5);
+	-webkit-transform:scale(0.5);
+	-moz-transform: scale(0.5);
+	-o-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+
+	/* IE10+ specific styles go here */
+}
+
+.border {
+    z-index: 99;
+    width: 968px;
+    height: 248px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 970px;
+    height: 250px;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0.5;
+}
+
+.icon:hover {
+    opacity: 1 !important;
+}
+
+#soundOffButton {
+    background-image: url("../images/soundicon_off.svg");
+}
+
+#soundOnButton {
+    background-image: url("../images/soundicon.svg");
+}
+
+#soundOffButton,
+#soundOnButton {
+    position: absolute;
+    top: 10px;
+    right: 450px;
+    width: 20px;
+    height: 20px
+}
+
+#playButton {
+    background-image: url("../images/play.svg");
+}
+
+#pauseButton {
+    background-image: url("../images/pause.svg");
+}
+
+#pauseButton,
+#playButton {
+    position: absolute;
+    top: 10px;
+    right: 430px;
+    width: 20px;
+    height: 20px
+}
+
+#bigPlayButton {
+    top: 65px;
+    right: 630px;
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/play.svg");
+}
+
+#replayButton {
+    top: 10px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../images/replay.svg");
+}
+
+#ctaButton {
+    left: 27px;
+    top: 110px;
+	width: 115px;
+	height: auto;
+    overflow: hidden;
+    background-color: #1a9fe0;
+    padding: 6px 5px;
+    border-radius: 3px;
+    border: 1px solid #7acaef;
+}
+
+#cta.no-arrow {
+    padding-left: 13px
+}
+
+.arrowRight {
+    display: inline-block;
+    margin-bottom: 1px
+}
+
+.arrowRight .inside {
+    width: 5px;
+    height: 8px;
+    background-image: url("../images/btn_arrow.png");
+    background-size: 5px 8px;
+    position: relative;
+    left: 5px;
+}
